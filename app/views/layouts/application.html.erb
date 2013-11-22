@@ -22,18 +22,20 @@
 </head>
 <body>
 
-<div class="row">
-<div class="col-md-3">
-	Lean UX
-</div>
-<div class="col-md-9">
-	Lean UX
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<%=image_tag("leanuxlogo.png") %>
+		</div>
+		<div class="col-md-9">
+			<%= link_to("Home", pages_home_path) %>
+			<%= link_to("Brand", pages_brand_path) %>
+			<%= link_to("Keynote", pages_keynote_path) %>
+			<%= link_to("MVP", pages_mvp_path) %>
+		</div>
+	</div>
 </div>
 
-<%= link_to("Home", pages_home_path) %>
-<%= link_to("Brand", pages_brand_path) %>
-<%= link_to("Keynote", pages_keynote_path) %>
-<%= link_to("MVP", pages_mvp_path) %>
 
 <%= yield %>
 
