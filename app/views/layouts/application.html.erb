@@ -20,23 +20,28 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 
 </head>
-<body>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<%=image_tag("leanuxlogo.png") %>
-		</div>
-		<div class="col-md-9">
-			<%= link_to("Home", pages_home_path) %>
-			<%= link_to("Brand", pages_brand_path) %>
-			<%= link_to("Keynote", pages_keynote_path) %>
-			<%= link_to("MVP", pages_mvp_path) %>
+
+<body>
+<header style="background-color:#5ac6ff; padding:20px 0 20px 0">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<%=image_tag("leanuxlogo.png" , :size => "200x50") %>
+			</div>
+			<div class="col-md-9">
+				<ul class="nav pull-right">
+					<li style="float:left"><%= link_to("Home", pages_home_path, :style=>"color:white") %> </li>
+					<li style="float:left"><%= link_to("Brand", pages_brand_path, :style=>"color:white") %> </li>
+					<li style="float:left"><%= link_to("Keynote", pages_keynote_path, :style=>"color:white") %> </li>
+					<li style="float:left"><%= link_to("MVP", pages_mvp_path, :style=>"color:white") %></li>
+				</ul>
+			</div>
 		</div>
 	</div>
+
 </div>
-
-
 <%= yield %>
 
 </body>
