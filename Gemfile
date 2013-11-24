@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 gem 'haml-rails'
 
+gem 'mail_form', '~> 1.5.0.rc'
+gem 'simple_form', '~> 3.0.0.rc'
+
 # Use sqlite3 as the database for Active Record
 group :development do
 	gem 'sqlite3'
